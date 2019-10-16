@@ -1,0 +1,25 @@
+OpenFlow
+
+Why: want to do experiment on the network. Commercial network setting has lots of limitation(narrow interfaces, inflexible)
+	
+How: flow-table contained in many morden Ethenet switch.
+OpenFlow switch contains:
+	* Flow table
+	* Secure channel(between switch and controller)
+	* OpenFlow Protocol
+
+All OpenFlow switches must support:
+
+	* Forwards packets to port(s)
+	* Encapsulate and forward packets to controller
+	* Drop packets
+
+An entry in the Flow-Table:
+	* packet header
+	* action
+	* statistics
+
+Traffic isolation:
+	Forward this flow’s packets through the switch’s normal processing pipeline.
+OR
+	Defined seperated set of VLANs for experimental and production traffic
